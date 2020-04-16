@@ -1,0 +1,343 @@
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <title>Bolt.css</title>
+    <link id="stylesheet" rel="stylesheet" href="bolt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">		
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <h1>⚡️Bolt.css</h1>
+    <p>
+      Basic styles for HTML elements. Providing a mostly-reasonable set of styles without classes.
+      <br>
+      <br>
+      Use it for simple static sites or as a starting point and add your own classes. Don't use it as a complete solution as this doesn't include complex components, form validation, modals, or layout grids.
+    </p>
+		
+		<!-- <h2>Motivation</h2> 
+		<p>Theres a couple main reasons I wanted this to exist. First and foremost is that I long for the days where anyone with a little curiosity and some gumption could publish to the web. This serves as an ode to simple HTML being published without all sorts of crazy CMSs and JavaScript frameworks. As well, the native HTML elements are fairly powerful in their own right. Simply give them some styling love and you have something extremely usable and performant out of the box.</p>
+    <p>Creating something like this should almost be a rite of passage for any web developer. While HTML is the absolute core of the web, it's increasingly neglected in favor of JavaScript.</p> -->
+      
+    <h2>How I made this</h2>
+    <p>I used the fantastic <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements Reference</a> on MDN and modified as I saw fit.</p>
+		
+    <!-- Replace this with features / highlights -->
+    <h2>Features</h2>
+    <ul>
+      <li>No reset used</li>
+      <li>No layout support</li>
+      <li>Responsive</li>
+      <li>Tiny</li>
+      <li>Extensible</li>
+      <li>Limited theming</li>
+    </ul>
+		
+		<h2>How to use</h2>		
+    <ul>
+	    <li>Use it as-is to spruce up your static site</li>
+      <li>If you are an experienced front-end developer, use this as a great starting point.</li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Content sectioning -->   
+    <h2>Content sectioning</h2> 
+      
+    <!-- address -->    
+    <h6>address</h6>  
+    <hr>    
+    <address>
+      <a href="mailto:jim@rock.com">jim@rock.com</a>
+      <br>
+      <a href="tel:+13115552368">(311) 555-2368</a>
+    </address>
+    
+    <!-- article -->    
+    <h6>article</h6>
+    <hr>
+    <article>
+      <header>
+        <h2>Jurassic Park</h2>
+      </header>
+      <section>
+        <p>Dinos were great!</p>
+      </section>
+      <section>
+        <article>
+          <p>Way too scary for me.</p>
+          <footer>
+            <p>
+              Posted on
+              <time datetime="2015-05-16 19:00">May 16</time>
+              by Lisa.
+            </p>
+          </footer>
+        </article>
+        <article>
+          <p>I agree, dinos are my favorite.</p>
+          <footer>
+            <p>
+              Posted on
+              <time datetime="2015-05-17 19:00">May 17</time>
+              by Tom.
+            </p>
+          </footer>
+        </article>
+      </section>
+      <footer>
+        <p>
+          Posted on
+          <time datetime="2015-05-15 19:00">May 15</time>
+          by Staff.
+        </p>
+      </footer>
+    </article>
+    
+    <!-- aside -->    
+    <h6>aside</h6>
+    <hr>
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+    <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
+      
+      
+    <!-- footer -->
+    <h6>footer</h6>
+    <hr>
+    <article>
+      <h1>How to be a wizard</h1>
+      <ol>
+        <li>Grow a long, majestic beard.</li>
+        <li>Wear a tall, pointed hat.</li>
+        <li>Have I mentioned the beard?</li>
+      </ol>
+      <footer>
+        <p>© 2018 Gandalf</p>
+      </footer>
+    </article>
+      
+    
+    <!-- header -->    
+    <h6>header</h6>
+    <hr>
+    <header>
+      <h1>Cute Puppies Express!</h1>
+    </header>
+    <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+          
+          
+    <!-- headings h1-h6 -->    
+    <h6>headings</h6>
+    <hr>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+          
+          
+    <!-- hgroup -->
+    <h6>hgroup</h6>  
+    <hr>
+    <hgroup>
+      <h1>Calculus I</h1>
+      <h2>Fundamentals</h2>
+    </hgroup>    
+    
+    
+    <!-- main -->      
+    <h6>main</h6>
+    <hr>
+    <main role="main">
+      <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.</p>     
+      <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
+    </main>
+    
+    
+    <!-- nav -->    
+    <h6>nav</h6>
+    <hr>
+    <nav class="crumbs">
+      <ol>
+        <li class="crumb"><a href="bikes">Bikes</a></li>
+        <li class="crumb"><a href="bikes/bmx">BMX</a></li>
+        <li class="crumb">Jump Bike 3000</li>
+      </ol>
+    </nav>
+    
+    <!-- section -->    
+    <h6>section</h6>
+    <hr>
+    <section>
+      <h2>Introduction</h2>
+      <p>People have been catching fish for food since before recorded history…</p>
+    </section>
+        
+        
+    
+    <!-- Inline text elements  -->    
+    <h2>Inline text elements</h2>
+    <p>When Dave asks <a href="https://wikipedia.org/HAL_9000">HAL</a> to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q> You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>. The two most popular science courses offered by the school are <b class="term">chemistry</b> (the study of chemicals and the composition of substances) and <b class="term">physics</b> (the study of the nature and properties of matter and energy). First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1). 
+      
+    <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array. We <em>had</em> to do something about it. I looked at it and thought <i>This can't be real!</i>.</p>
+      
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page. Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest. <s>There will be a few tickets available at the box office tonight.</s> I was trying to boot my computer, but I got this hilarious message:</p>
+    <samp>Keyboard not found <br>Press F1 to continue</samp>
+      
+    <p>The most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>. Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine. The <b>Pythagorean theorem</b> is often expressed as the following equation: <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>.</p>
+      
+    <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park. The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>. You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them. The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box. There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.</p>
+      
+    <small>This sample section of in-line text was mostly sourced from the wonderful <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements reference</a> over on MDN.</small>
+      
+      
+
+
+
+
+
+
+
+<h6>blockquote</h6>
+  <hr>
+    <!-- blockquote -->
+    <blockquote cite="https://www.huxley.net/bnw/four.html">
+        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+        <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+    </blockquote>
+<h6>description</h6>
+  <hr>
+    <!-- description list -->    
+    <dl>
+      <dt>Beast of Bodmin</dt>
+      <dd>A large feline inhabiting Bodmin Moor.</dd>
+  
+      <dt>Morgawr</dt>
+      <dd>A sea serpent.</dd>
+  
+      <dt>Owlman</dt>
+      <dd>A giant owl-like creature.</dd>
+    </dl>
+    <h6>figure</h6>
+      <hr>
+    <!-- figure with figcaption -->    
+    <figure>
+      <img src="https://placekitten.com/408/287" alt="Elephant at sunset">
+      <figcaption>An elephant at sunset</figcaption>
+    </figure>
+    <h6>hr</h6>
+      <hr>
+    <!-- hr -->    
+    <hr>
+    <h6>ol</h6>
+      <hr>
+    <!-- ol -->    
+    <ol>
+      <li>Mix flour, baking powder, sugar, and salt.</li>
+      <li>In another bowl, mix eggs, milk, and oil.</li>
+      <li>Stir both mixtures together.</li>
+      <li>Fill muffin tray 3/4 full.</li>
+      <li>Bake for 20 minutes.</li>
+    </ol>
+    <h6>ul</h6>
+      <hr>
+    <!-- ul -->    
+    <ul>
+      <li>Neil Armstrong</li>
+      <li>Alan Bean</li>
+      <li>Peter Conrad</li>
+      <li>Edgar Mitchell</li>
+      <li>Alan Shepard</li>
+    </ul>  
+    <h6>p</h6>
+      <hr>
+    <!-- p -->    
+		<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p> 
+    <h6>pre</h6>
+      <hr>
+    <!-- pre -->
+     <pre>
+      L          TE
+        A       A
+          C    V
+           R A
+           DOU
+           LOU
+          REUSE
+          QUE TU
+          PORTES
+        ET QUI T'
+        ORNE O CI
+         VILISÉ
+        OTE-  TU VEUX
+         LA    BIEN
+        SI      RESPI
+                RER       - Apollinaire
+    </pre>   
+
+    <h6>a</h6>
+    <hr>
+    <!-- a -->
+    <a href="https://example.com">Website</a>
+    <a href="mailto:m.bluth@example.com">Email</a>  
+    <a href="tel:+123456789">Phone</a>
+
+
+    <del>
+        <p>“I apologize for the delay.”</p>
+    </del>
+    <ins cite="../howtobeawizard.html" datetime="2018-05">
+        <p>“A wizard is never late …”</p>
+    </ins>
+    
+    <!-- img ...not using maps lol-->    
+    <img class="fit-picture" src="/media/examples/grapefruit-slice-332-332.jpg" alt="Grapefruit slice atop a pile of other slices">
+    
+    <!-- audio -->    
+    <audio
+        controls
+        src="/media/examples/t-rex-roar.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>    
+    
+    <!-- video -->    
+    <video controls width="250">    
+        <source src="/media/examples/flower.webm"
+                type="video/webm">
+    
+        <source src="/media/examples/flower.mp4"
+                type="video/mp4">
+    
+        Sorry, your browser doesn't support embedded videos.
+    </video>
