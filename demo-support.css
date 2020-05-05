@@ -1,0 +1,14 @@
+/* Demo page support */ 
+.demo-body {
+	max-width: 800px; 
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+.demo-header {
+	margin-top: 40px;
+}
+
+.demo-break {
+	margin-top: 7rem;
+}

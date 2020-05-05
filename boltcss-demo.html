@@ -3,24 +3,25 @@
     <meta charset="utf-8">
     <title>Bolt.css</title>
     <link id="stylesheet" rel="stylesheet" href="bolt.css">
+    <link id="stylesheet" rel="stylesheet" href="demo-support.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">		
     <link rel="icon" href="favicon.ico">
   </head>
 
-  <body>
+  <body class="demo-body">
     <h1>⚡️Bolt.css</h1>
     <p>
       Basic styles for HTML elements. Providing a mostly-reasonable set of styles without classes.
       <br>
       <br>
-      Use it for simple static sites or as a starting point and add your own classes. Don't use it as a complete solution as this doesn't include complex components, form validation, modals, or layout grids.
+      Use it for simple static sites or as a starting point and add your own classes. This is not a complete solution with layout grids, components, etc...
     </p>
 		
 		<!-- <h2>Motivation</h2> 
 		<p>Theres a couple main reasons I wanted this to exist. First and foremost is that I long for the days where anyone with a little curiosity and some gumption could publish to the web. This serves as an ode to simple HTML being published without all sorts of crazy CMSs and JavaScript frameworks. As well, the native HTML elements are fairly powerful in their own right. Simply give them some styling love and you have something extremely usable and performant out of the box.</p>
     <p>Creating something like this should almost be a rite of passage for any web developer. While HTML is the absolute core of the web, it's increasingly neglected in favor of JavaScript.</p> -->
       
-    <h2>How I made this</h2>
+    <h2>How and why I made this</h2>
     <p>I used the fantastic <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements Reference</a> on MDN and modified as I saw fit.</p>
 		
     <!-- Replace this with features / highlights -->
@@ -33,12 +34,6 @@
       <li>Extensible</li>
       <li>Limited theming</li>
     </ul>
-		
-		<h2>How to use</h2>		
-    <ul>
-	    <li>Use it as-is to spruce up your static site</li>
-      <li>If you are an experienced front-end developer, use this as a great starting point.</li>
-    </ul>
     
     
     
@@ -57,20 +52,15 @@
     
     
     
-    
-    
-    
-    
-    
+    <h2 class="demo-break">Demos</h2>
+    <hr>
     
     
     
     <!-- Content sectioning -->   
-    <h2>Content sectioning</h2> 
       
     <!-- address -->    
-    <h6>address</h6>  
-    <hr>    
+    <h6 class="demo-header">address</h6>      
     <address>
       <a href="mailto:jim@rock.com">jim@rock.com</a>
       <br>
@@ -78,49 +68,10 @@
     </address>
     
     <!-- article -->    
-    <h6>article</h6>
-    <hr>
-    <article>
-      <header>
-        <h2>Jurassic Park</h2>
-      </header>
-      <section>
-        <p>Dinos were great!</p>
-      </section>
-      <section>
-        <article>
-          <p>Way too scary for me.</p>
-          <footer>
-            <p>
-              Posted on
-              <time datetime="2015-05-16 19:00">May 16</time>
-              by Lisa.
-            </p>
-          </footer>
-        </article>
-        <article>
-          <p>I agree, dinos are my favorite.</p>
-          <footer>
-            <p>
-              Posted on
-              <time datetime="2015-05-17 19:00">May 17</time>
-              by Tom.
-            </p>
-          </footer>
-        </article>
-      </section>
-      <footer>
-        <p>
-          Posted on
-          <time datetime="2015-05-15 19:00">May 15</time>
-          by Staff.
-        </p>
-      </footer>
-    </article>
+    <!-- not provided -->    
     
     <!-- aside -->    
-    <h6>aside</h6>
-    <hr>
+    <h6 class="demo-header">aside</h6>
     <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
     <aside>
         <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
@@ -129,33 +80,15 @@
       
       
     <!-- footer -->
-    <h6>footer</h6>
-    <hr>
-    <article>
-      <h1>How to be a wizard</h1>
-      <ol>
-        <li>Grow a long, majestic beard.</li>
-        <li>Wear a tall, pointed hat.</li>
-        <li>Have I mentioned the beard?</li>
-      </ol>
-      <footer>
-        <p>© 2018 Gandalf</p>
-      </footer>
-    </article>
+    <!-- not provided -->    
       
     
     <!-- header -->    
-    <h6>header</h6>
-    <hr>
-    <header>
-      <h1>Cute Puppies Express!</h1>
-    </header>
-    <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+    <!-- not provided -->    
           
           
     <!-- headings h1-h6 -->    
-    <h6>headings</h6>
-    <hr>
+    <h6 class="demo-header">headings</h6>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -165,46 +98,23 @@
           
           
     <!-- hgroup -->
-    <h6>hgroup</h6>  
-    <hr>
-    <hgroup>
-      <h1>Calculus I</h1>
-      <h2>Fundamentals</h2>
-    </hgroup>    
+    <!-- not provided -->    
     
     
     <!-- main -->      
-    <h6>main</h6>
-    <hr>
-    <main role="main">
-      <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.</p>     
-      <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
-    </main>
+    <!-- not provided -->    
     
     
-    <!-- nav -->    
-    <h6>nav</h6>
-    <hr>
-    <nav class="crumbs">
-      <ol>
-        <li class="crumb"><a href="bikes">Bikes</a></li>
-        <li class="crumb"><a href="bikes/bmx">BMX</a></li>
-        <li class="crumb">Jump Bike 3000</li>
-      </ol>
-    </nav>
+    <!-- nav -->  
+    <!-- not provided -->     
+
     
-    <!-- section -->    
-    <h6>section</h6>
-    <hr>
-    <section>
-      <h2>Introduction</h2>
-      <p>People have been catching fish for food since before recorded history…</p>
-    </section>
+    <!-- section - no styles for now -->    
         
         
     
     <!-- Inline text elements  -->    
-    <h2>Inline text elements</h2>
+    <h6 class="demo-header">inline text elements</h6>
     <p>When Dave asks <a href="https://wikipedia.org/HAL_9000">HAL</a> to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q> You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>. The two most popular science courses offered by the school are <b class="term">chemistry</b> (the study of chemicals and the composition of substances) and <b class="term">physics</b> (the study of the nature and properties of matter and energy). First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1). 
       
     <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array. We <em>had</em> to do something about it. I looked at it and thought <i>This can't be real!</i>.</p>
@@ -226,16 +136,15 @@
 
 
 
-<h6>blockquote</h6>
-  <hr>
     <!-- blockquote -->
+    <h6 class="demo-header">blockquote</h6>
     <blockquote cite="https://www.huxley.net/bnw/four.html">
-        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
-        <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+      <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+      <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
     </blockquote>
-<h6>description</h6>
-  <hr>
+    
     <!-- description list -->    
+    <h6 class="demo-header">description</h6>
     <dl>
       <dt>Beast of Bodmin</dt>
       <dd>A large feline inhabiting Bodmin Moor.</dd>
@@ -246,20 +155,18 @@
       <dt>Owlman</dt>
       <dd>A giant owl-like creature.</dd>
     </dl>
-    <h6>figure</h6>
-      <hr>
+    
     <!-- figure with figcaption -->    
+    <h6 class="demo-header">figure</h6>
     <figure>
-      <img src="https://placekitten.com/408/287" alt="Elephant at sunset">
+      <img src="https://placebear.com/620/400" alt="Elephant at sunset">
       <figcaption>An elephant at sunset</figcaption>
     </figure>
-    <h6>hr</h6>
-      <hr>
-    <!-- hr -->    
-    <hr>
-    <h6>ol</h6>
-      <hr>
+    
+    <!-- hr used at top -->    
+
     <!-- ol -->    
+    <h6 class="demo-header">ol</h6>
     <ol>
       <li>Mix flour, baking powder, sugar, and salt.</li>
       <li>In another bowl, mix eggs, milk, and oil.</li>
@@ -267,63 +174,67 @@
       <li>Fill muffin tray 3/4 full.</li>
       <li>Bake for 20 minutes.</li>
     </ol>
-    <h6>ul</h6>
-      <hr>
+    
     <!-- ul -->    
+    <h6 class="demo-header">ul</h6>
     <ul>
       <li>Neil Armstrong</li>
       <li>Alan Bean</li>
       <li>Peter Conrad</li>
       <li>Edgar Mitchell</li>
       <li>Alan Shepard</li>
-    </ul>  
-    <h6>p</h6>
-      <hr>
+    </ul>
+      
     <!-- p -->    
-		<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p> 
-    <h6>pre</h6>
-      <hr>
+    <!-- used in-line -->    
+    
     <!-- pre -->
-     <pre>
-      L          TE
-        A       A
-          C    V
-           R A
-           DOU
-           LOU
-          REUSE
-          QUE TU
-          PORTES
-        ET QUI T'
-        ORNE O CI
-         VILISÉ
-        OTE-  TU VEUX
-         LA    BIEN
-        SI      RESPI
-                RER       - Apollinaire
+    <h6 class="demo-header">pre</h6>
+    <pre>
+    L          TE
+      A       A
+        C    V
+         R A
+         DOU
+         LOU
+        REUSE
+        QUE TU
+        PORTES
+      ET QUI T'
+      ORNE O CI
+       VILISÉ
+      OTE-  TU VEUX
+       LA    BIEN
+      SI      RESPI
+              RER       - Apollinaire
     </pre>   
 
-    <h6>a</h6>
-    <hr>
     <!-- a -->
-    <a href="https://example.com">Website</a>
-    <a href="mailto:m.bluth@example.com">Email</a>  
-    <a href="tel:+123456789">Phone</a>
+    <!-- used in in-line -->    
 
-
-    <del>
-        <p>“I apologize for the delay.”</p>
-    </del>
-    <ins cite="../howtobeawizard.html" datetime="2018-05">
-        <p>“A wizard is never late …”</p>
-    </ins>
+    <!-- del -->    
+    <!-- used in in-line -->    
     
-    <!-- img ...not using maps lol-->    
-    <img class="fit-picture" src="/media/examples/grapefruit-slice-332-332.jpg" alt="Grapefruit slice atop a pile of other slices">
     
-    <!-- audio -->    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- img -->    
+    <h6 class="demo-header">img</h6>
+    <img class="fit-picture" src="https://placebear.com/720/360" alt="Grapefruit slice atop a pile of other slices">
+    
+    <!-- audio -->   
+    <h6 class="demo-header">audio</h6> 
     <audio
         controls
         src="/media/examples/t-rex-roar.mp3">
@@ -331,13 +242,193 @@
             <code>audio</code> element.
     </audio>    
     
-    <!-- video -->    
+    <!-- video -->
+    <h6 class="demo-header">video</h6>    
     <video controls width="250">    
-        <source src="/media/examples/flower.webm"
-                type="video/webm">
-    
-        <source src="/media/examples/flower.mp4"
-                type="video/mp4">
-    
-        Sorry, your browser doesn't support embedded videos.
+      <source src="/media/examples/flower.webm" type="video/webm">    
+      <source src="/media/examples/flower.mp4"  type="video/mp4">    
+      Sorry, your browser doesn't support embedded videos.
     </video>
+    
+    
+    
+    
+    
+    <!-- table -->    
+    <h6 class="demo-header">table</h6>    
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Home Runs</th>
+          <th>AVG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mike Trout</td>
+          <td>45</td>
+          <td>.291</td>
+        </tr>
+        <tr>
+          <td>Christian Yelich</td>
+          <td>44</td>
+          <td>.329</td>
+        </tr>
+        <tr>
+          <td>Mookie Betts</td>
+          <td>29</td>
+          <td>.295</td>
+        </tr>
+        <tr>
+          <td>Cody Bellinger</td>
+          <td>47</td>
+          <td>.305</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    
+    <!-- form elements -->    
+    
+    <!-- buttons -->    
+    <h6 class="demo-header">buttons</h6>   
+    <button type="button">Save</button>
+    
+    
+    <!-- datalist -->    
+    <h6 class="demo-header">datalist</h6>   
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+    
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+    
+    
+    
+    <!-- fieldset -->    
+    <h6 class="demo-header">fieldset</h6>   
+    <form>
+      <fieldset>
+        <legend>Choose your favorite monster</legend>
+    
+        <input type="radio" id="kraken" name="monster">
+        <label for="kraken">Kraken</label><br/>
+    
+        <input type="radio" id="sasquatch" name="monster">
+        <label for="sasquatch">Sasquatch</label><br/>
+    
+        <input type="radio" id="mothman" name="monster">
+        <label for="mothman">Mothman</label>
+      </fieldset>
+    </form>
+    
+    
+    <!-- form -->    
+    <h6 class="demo-header">form</h6>   
+    <form action="" method="get" class="form-example">
+    <div class="form-example">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+      <input type="submit" value="Subscribe!">
+    </div>
+  </form>
+  
+  
+  <!-- meter -->    
+  <h6 class="demo-header">meter</h6>   
+  <label for="fuel">Fuel level:</label>  
+  <meter id="fuel"
+         min="0" max="100"
+         low="33" high="66" optimum="80"
+         value="50">
+      at 50/100
+  </meter>
+  
+  
+  <!-- optgroup -->    
+  <h6 class="demo-header">optgroup</h6>   
+  <label for="dino-select">Choose a dinosaur:</label>
+  <select id="dino-select">
+      <optgroup label="Theropods">
+          <option>Tyrannosaurus</option>
+          <option>Velociraptor</option>
+          <option>Deinonychus</option>
+      </optgroup>
+      <optgroup label="Sauropods">
+          <option>Diplodocus</option>
+          <option>Saltasaurus</option>
+          <option>Apatosaurus</option>
+      </optgroup>
+  </select>
+
+  
+  <!-- output -->    
+  <h6 class="demo-header">output</h6>   
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="b" name="b" value="50" /> +
+    <input type="number" id="a" name="a" value="10" /> =
+    <output name="result" for="a b">60</output>
+  </form>
+  
+  
+  <!-- progress -->    
+  <h6 class="demo-header">progress</h6>   
+  <label for="file">File progress:</label>
+  <progress id="file" max="100" value="70"> 70% </progress>
+  
+  <!-- select -->    
+  <h6 class="demo-header">select</h6>   
+  <label for="pet-select">Choose a pet:</label>  
+  <select name="pets" id="pet-select">
+      <option value="">--Please choose an option--</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+  </select>
+
+  <!-- text area -->    
+  <h6 class="demo-header">text area</h6>   
+  <label for="story">Tell us your story:</label>
+  
+  <textarea id="story" name="story"
+            rows="5" cols="33">
+  It was a dark and stormy night...
+  </textarea>
+
+
+    
+    
+    
+    
+    
+    
+    
+    <!-- interactive elements --> 
+       
+    <!-- summary/details -->    
+    <h6 class="demo-header">summary/details</h6>   
+    <details>
+      <summary>Details</summary>
+      Something small enough to escape casual notice.
+    </details>
+    
+    
+    
+    </body>
+</html>
