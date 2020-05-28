@@ -1,7 +1,7 @@
 /* Demo page support */ 
 .demo-body {
 	max-width: 800px; 
-	margin: 20px auto;
+	margin: 40px auto;
 	padding: 0 20px;
 }
 
@@ -10,5 +10,10 @@
 }
 
 .demo-break {
-	margin-top: 7rem;
+	margin-top: 5rem;
+}
+
+#fuel {
+	max-width: 600px;
+	min-width: 200px;
 }
