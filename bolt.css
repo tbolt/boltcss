@@ -22,17 +22,19 @@ Main sections
   --background: #ededf0;  
   --primary: #e23123;
   --text: #1c1d1e;
-  --links: #0066df;  
+  --links: #2aa2bb;  
   --border: #dbdbdb;  
   --button-hover: #dddddd;  
   --highlight-border-radius: 3px;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --background-body: #181818;
+    --background-body: #151617;
+    --links: #2aa2bb;
+    --text: #efefef;
   }
-} */
+}
 
 body {
   font: 12pt -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
