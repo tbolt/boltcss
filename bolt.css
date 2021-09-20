@@ -5,10 +5,9 @@
  */
  
  
- 
 /*  
-Main sections
-1. Content Sectioning
+Sections
+1. Content sectioning
 2. Text content
 3. Inline text semantics
 4. Image and multimedia
@@ -18,21 +17,25 @@ Main sections
 */ 
   
 :root {
-  --background-body: snow;
+  --background-body: #fff;
   --background: #ededf0;  
   --primary: #e23123;
   --text: #1c1d1e;
   --links: #2aa2bb;  
   --border: #dbdbdb;  
   --button-hover: #dddddd;  
-  --highlight-border-radius: 3px;
+  --highlight-border-radius: 7px;
+  --border-radius: 11px;
+  --shadow-color: #545454;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-body: #151617;
+    --background: color(srgb 0.228 0.228 0.228);
     --links: #2aa2bb;
     --text: #efefef;
+    --shadow-color: #bebebe;
   }
 }
 
@@ -47,28 +50,20 @@ body {
 
 
 
-
-
-
 /* Content sectioning */
 address {
   font-style: normal;
 }
 
-/* Revisit this after seeing what others do. Probably don't need to style */ 
-article {
-
-}
-
 /* This sets a float right which makes it fixed */
 aside {
   width: 40%;
-  padding-left: .5rem;
-  margin-left: .5rem;
+  padding: .84rem;
   float: right;
-  background-color: white;
   font-style: italic;
   color: var(--text);
+  background-color: var(--background);
+  border-radius: var(--border-radius);
 }
 
 /* No styles provided */
@@ -132,21 +127,16 @@ section {
 
 
 
-
-
-
-
-
 /* Text content */
 blockquote {
-  border-left: 3px solid gray;
+  border-left: 7px solid var(--background);
   padding-left: 1em;
   margin: 0;
 }
 
 dd {
   margin-left: 0;
-  padding-bottom: 5px;
+  padding-bottom: 11px;
 }
 
 dl {
@@ -184,6 +174,7 @@ p {
 
 
 
+
 /* Inline text elements */
 a {
   color: var(--links);
@@ -194,7 +185,8 @@ mark, samp, kbd, code, time {
 }
 
 mark {
-  background-color: #fff680;
+  color: var(--text);
+  background-color: #e6e08e;
   padding: 3px 5px;
 }
 
@@ -238,14 +230,6 @@ sup, sub {
 
 
 
-
-
-
-
-
-
-
-
 /* Image and multimedia */
 audio {
   
@@ -254,6 +238,7 @@ audio {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: var(--border-radius);
 }
 
 video {
@@ -264,15 +249,12 @@ video {
 
 
 
-
-
-
-
 /* Table content */
 table {
-  border-collapse: collapse;
   width: 100%;
   margin: 10px 0;
+  border: 7px solid var(--background);
+  border-radius: var(--border-radius);
 }
 
 td,
@@ -282,7 +264,8 @@ th {
 }
 
 thead {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid red;
+  border-collapse: collapse;
 }
 
 tfoot {
@@ -292,15 +275,6 @@ tfoot {
 tbody tr:nth-child(even) {
   background-color: var(--background);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,17 +322,10 @@ fieldset {
 
 
 
-
-
-
-
-
-
-
 /* Interactive elements */
 details {
     border: 1px solid #aaa;
-    border-radius: 4px;
+    border-radius: 7px;
     padding: .5em .5em 0;
 }
 
