@@ -1,20 +1,18 @@
 /**
  * Bolt.css
- * Version 1.0
+ * Version 0.1
  * https://github.com/tbolt/boltcss
+ *
+ * Sections
+ * 1. Content sectioning
+ * 2. Text content
+ * 3. Inline text semantics
+ * 4. Image and multimedia
+ * 5. Tables
+ * 6. Forms
+ * 7. Interactive elements
+ * 
  */
- 
- 
-/*  
-Sections
-1. Content sectioning
-2. Text content
-3. Inline text semantics
-4. Image and multimedia
-5. Tables
-6. Forms
-7. Interactive elements
-*/ 
   
 :root {
   --background-body: #fff;
@@ -40,10 +38,10 @@ Sections
 }
 
 body {
-  font: 12pt --apple-system, BlinkMacSystemFont, "Segoe UI Variable Text", "Segoe UI", "Meiryo", system-ui, ui-sans-serif, Helvetica, sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  line-height: 1.6rem;
-  text-rendering: optimizeLegibility;
-
+  font-size: 12pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6em;
+  
   color: var(--text);
   background: var(--background-body);
 }
@@ -75,6 +73,7 @@ footer {
 header {
   
 }
+--------------------------------------------------------
 
 h1 {
   font-size: 2.4em;
@@ -124,9 +123,6 @@ section {
 }
 
 
-
-
-
 /* Text content */
 blockquote {
   border-left: 7px solid var(--background);
@@ -172,9 +168,6 @@ p {
 }
 
 
-
-
-
 /* Inline text elements */
 a {
   color: var(--links);
@@ -185,7 +178,6 @@ mark, samp, kbd, code, time {
 }
 
 mark {
-  color: var(--text);
   background-color: #e6e08e;
   padding: 3px 5px;
 }
@@ -227,9 +219,6 @@ sup, sub {
 }
 
 
-
-
-
 /* Image and multimedia */
 audio {
   
@@ -244,9 +233,6 @@ img {
 video {
   
 }
-
-
-
 
 
 /* Table content */
@@ -277,9 +263,6 @@ tbody tr:nth-child(even) {
 }
 
 
-
-
-
 /* Form elements */
 button {
   color: var(--text);
@@ -300,7 +283,6 @@ button:active {
   box-shadow: none;
   border: 1px solid rgba(158,158,158,.6);
 }
-
 /* revist this... */
 button, select, input[type="submit"], input[type="button"], input[type="checkbox"], input[type="range"], input[type="radio"] {
   cursor: pointer;
@@ -319,27 +301,24 @@ fieldset {
 }
 
 
-
-
-
 /* Interactive elements */
 details {
-    border: 1px solid #aaa;
-    border-radius: 7px;
-    padding: .5em .5em 0;
+  border: 1px solid #aaa;
+  border-radius: 7px;
+  padding: .5em .5em 0;
 }
 
 summary {
-    font-weight: bold;
-    margin: -.5em -.5em 0;
-    padding: .5em;
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
 }
 
 details[open] {
-    padding: .5em;
+  padding: .5em;
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
 }
