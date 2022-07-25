@@ -324,6 +324,7 @@ fieldset {
   margin: 0;
   margin-bottom: 6px;
   padding: 10px;
+  max-width: fit-content;
 }
 
 
