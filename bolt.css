@@ -13,15 +13,15 @@
  * 7. Interactive elements
  * 
  */
-  
+
 :root {
   --background-body: #fff;
-  --background: #ededf0;  
+  --background: #ededf0;
   --primary: #e23123;
   --text: #1c1d1e;
-  --links: #2aa2bb;  
-  --border: #dbdbdb;  
-  --button-hover: #dddddd;  
+  --links: #2aa2bb;
+  --border: #dbdbdb;
+  --button-hover: #dddddd;
   --highlight-border-radius: 7px;
   --border-radius: 11px;
   --shadow-color: #545454;
@@ -40,12 +40,11 @@
 
 body {
   font-size: 12pt;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: var(--text);
   background: var(--background-body);
 }
-
-
 
 /* Content sectioning */
 address {
@@ -56,7 +55,7 @@ address {
 /* This sets a float right which makes it fixed */
 aside {
   width: 40%;
-  padding: .84rem;
+  padding: 0.84rem;
   float: right;
   font-style: italic;
   color: var(--text);
@@ -66,12 +65,10 @@ aside {
 
 /* No styles provided */
 footer {
-  
 }
 
 /* No styles provided */
 header {
-  
 }
 
 h1 {
@@ -100,15 +97,14 @@ h6 {
   font-weight: normal;
 }
 
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h1,
@@ -123,24 +119,19 @@ th {
 
 /* Not provided */
 hgroup {
-  
 }
 
 /* Not provided */
 main {
-  
 }
 
 /* Not provided */
 nav {
-  
 }
 
 /* No styles */
 section {
-  
 }
-
 
 /* Text content */
 blockquote {
@@ -155,7 +146,6 @@ dd {
 }
 
 dl {
-
 }
 
 dt {
@@ -164,7 +154,7 @@ dt {
 
 figcaption {
   padding-top: 10px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 figure {
@@ -175,8 +165,8 @@ hr {
   border: 2px solid gray;
 }
 
-ul, ol {
-
+ul,
+ol {
 }
 
 li {
@@ -188,13 +178,16 @@ p {
   line-height: 1.6em;
 }
 
-
 /* Inline text elements */
 a {
   color: var(--links);
 }
 
-mark, samp, kbd, code, time {
+mark,
+samp,
+kbd,
+code,
+time {
   border-radius: var(--highlight-border-radius, 4px);
 }
 
@@ -211,7 +204,8 @@ samp {
   color: var(--text-main);
 }
 
-kbd, time {
+kbd,
+time {
   padding: 2px 4px;
   background-color: var(--background);
   color: var(--text-main);
@@ -223,6 +217,9 @@ code {
   background-color: whitesmoke;
   color: black;
   border: 1px solid darkgray;
+  display: block;
+  max-width: fit-content;
+  overflow-x: auto;
 }
 
 pre > code {
@@ -235,14 +232,13 @@ pre {
   margin: 0;
 }
 
-sup, sub {
+sup,
+sub {
   line-height: normal;
 }
 
-
 /* Image and multimedia */
 audio {
-  
 }
 
 img {
@@ -252,9 +248,7 @@ img {
 }
 
 video {
-  
 }
-
 
 /* Table content */
 table {
@@ -288,7 +282,6 @@ tbody tr:nth-child(even) {
   /* background-color: var(--background); */
 }
 
-
 /* Form elements */
 button {
   color: var(--text);
@@ -298,24 +291,29 @@ button {
   padding: 6px 15px 6px 15px;
   border: 1px solid transparent;
   border-radius: 6px;
-  box-shadow: 0px 2px 2px rgba(158,158,158,.6);
+  box-shadow: 0px 2px 2px rgba(158, 158, 158, 0.6);
 }
 
 button:hover {
-  box-shadow: 0px 3px 3px rgba(158,158,158,.6);   
+  box-shadow: 0px 3px 3px rgba(158, 158, 158, 0.6);
 }
 
 button:active {
   box-shadow: none;
-  border: 1px solid rgba(158,158,158,.6);
+  border: 1px solid rgba(158, 158, 158, 0.6);
 }
 /* revist this... */
-button, select, input[type="submit"], input[type="button"], input[type="checkbox"], input[type="range"], input[type="radio"] {
+button,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"] {
   cursor: pointer;
 }
 
 meter {
-
 }
 
 fieldset {
@@ -327,25 +325,24 @@ fieldset {
   max-width: fit-content;
 }
 
-
 /* Interactive elements */
 details {
   border: 1px solid #aaa;
   border-radius: 7px;
-  padding: .5em .5em 0;
+  padding: 0.5em 0.5em 0;
 }
 
 summary {
   font-weight: bold;
-  margin: -.5em -.5em 0;
-  padding: .5em;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
 }
 
 details[open] {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 details[open] summary {
   border-bottom: 1px solid #aaa;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }

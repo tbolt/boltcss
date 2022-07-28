@@ -1,19 +1,19 @@
-/* Demo page support */ 
+/* Demo page support */
 .demo-body {
-	max-width: 800px; 
-	margin: 40px auto;
-	padding: 0 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .demo-header {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
 .demo-break {
-	margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 #fuel {
-	max-width: 600px;
-	min-width: 200px;
+  max-width: 600px;
+  min-width: 200px;
 }
