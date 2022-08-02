@@ -13,6 +13,10 @@
   margin-top: 6rem;
 }
 
+.demo-code {
+  display: block;
+}
+
 #fuel {
   max-width: 600px;
   min-width: 200px;

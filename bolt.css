@@ -16,7 +16,7 @@
 
 :root {
   --background-body: #fff;
-  --background: #ededf0;
+  --background-main: #ededf0;
   --primary: #e23123;
   --text: #1c1d1e;
   --links: #2aa2bb;
@@ -30,7 +30,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-body: #0f0f0f;
-    --background: color(srgb 0.228 0.228 0.228);
+    --background-main: #3a3a3a;
     --links: #2aa2bb;
     --text: #efefef;
     --shadow-color: #bebebe;
@@ -59,7 +59,7 @@ aside {
   float: right;
   font-style: italic;
   color: var(--text);
-  background-color: var(--background);
+  background-color: var(--background-main);
   border-radius: var(--border-radius);
 }
 
@@ -135,7 +135,7 @@ section {
 
 /* Text content */
 blockquote {
-  border-left: 7px solid var(--background);
+  border-left: 7px solid var(--border);
   padding-left: 1em;
   margin: 0;
 }
@@ -200,14 +200,14 @@ samp {
   display: inline-block;
   font-weight: bold;
   padding: 10px 20px;
-  background-color: var(--background);
+  background-color: var(--background-main);
   color: var(--text-main);
 }
 
 kbd,
 time {
   padding: 2px 4px;
-  background-color: var(--background);
+  background-color: var(--background-main);
   color: var(--text-main);
 }
 
@@ -217,7 +217,6 @@ code {
   background-color: whitesmoke;
   color: black;
   border: 1px solid darkgray;
-  display: block;
   max-width: fit-content;
   overflow-x: auto;
 }
@@ -254,7 +253,7 @@ video {
 table {
   width: 100%;
   margin: 10px 0;
-  border: 1px solid var(--background);
+  border: 1px solid var(--border);
   border-collapse: collapse;
 }
 
@@ -265,7 +264,7 @@ th {
 }
 
 thead {
-  border-bottom: 1px solid var(--background);
+  border-bottom: 1px solid var(--border);
   border-collapse: collapse;
 }
 
@@ -285,7 +284,7 @@ tbody tr:nth-child(even) {
 /* Form elements */
 button {
   color: var(--text);
-  background-color: var(--background);
+  background-color: var(--background-main);
   font-family: inherit;
   font-size: inherit;
   padding: 6px 15px 6px 15px;
