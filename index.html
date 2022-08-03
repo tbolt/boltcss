@@ -202,12 +202,14 @@
       <dd>A giant owl-like creature.</dd>
     </dl>
 
-    <!-- figure with figcaption -->
-    <h6 class="demo-header">figure</h6>
+    <!-- figure with figcaption 
+      removing this for now- will revisit when we can do something unique with it
+    -->
+    <!-- <h6 class="demo-header">figure</h6>
     <figure>
       <img src="https://placebear.com/620/400" alt="Elephant at sunset" />
       <figcaption>An elephant at sunset</figcaption>
-    </figure>
+    </figure> -->
 
     <!-- hr used at top -->
 
@@ -236,23 +238,15 @@
 
     <!-- pre -->
     <h6 class="demo-header">pre</h6>
-    <pre>
-    L          TE
-      A       A
-        C    V
-         R A
-         DOU
-         LOU
-        REUSE
-        QUE TU
-        PORTES
-      ET QUI T'
-      ORNE O CI
-       VILISÉ
-      OTE-  TU VEUX
-       LA    BIEN
-      SI      RESPI
-              RER       - Apollinaire
+    <pre role="img" aria-label="ASCII COW">
+      ___________________________
+     | I'm an expert in my field. |
+      ---------------------------
+          \   ^__^
+           \  (oo)\_______
+              (__)\       )\/\
+                  ||----w |
+                  ||     ||
     </pre>
 
     <!-- a -->
@@ -264,7 +258,6 @@
     <!-- img -->
     <h6 class="demo-header">img</h6>
     <img
-      class="fit-picture"
       src="https://placebear.com/720/360"
       alt="Grapefruit slice atop a pile of other slices"
     />
@@ -327,13 +320,13 @@
     <!-- revist... -->
     <!-- datalist -->
     <h6 class="demo-header">datalist</h6>
-    <label for="ice-cream-choice">Choose a flavor:</label>
+    <label for="ice-cream-choice">Choose a flavor</label>
+    <br />
     <input
       list="ice-cream-flavors"
       id="ice-cream-choice"
       name="ice-cream-choice"
     />
-
     <datalist id="ice-cream-flavors">
       <option value="Chocolate"></option>
       <option value="Coconut"></option>
@@ -363,17 +356,40 @@
     <h6 class="demo-header">form</h6>
     <form action="#" method="get" class="form-example">
       <div class="form-example">
-        <label for="name">Enter your name: </label>
+        <label for="name">Full name</label><br />
         <input type="text" name="name" id="name" required />
       </div>
       <div class="form-example">
-        <label for="email">Enter your email: </label>
+        <label for="email">Email</label><br />
         <input type="email" name="email" id="email" required />
       </div>
       <div class="form-example">
         <input type="submit" value="Subscribe!" />
       </div>
     </form>
+
+    <!-- select -->
+    <h6 class="demo-header">select</h6>
+    <label for="pet-select">Choose a pet:</label>
+    <select name="pets" id="pet-select">
+      <option value="">--Please choose an option--</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+
+    <!-- text area -->
+    <h6 class="demo-header">text area</h6>
+    <textarea
+      id="story"
+      name="story"
+      placeholder="It was a dark and stormy night..."
+      rows="7"
+      cols="66"
+    ></textarea>
 
     <!-- meter -->
     <h6 class="demo-header">meter</h6>
@@ -418,28 +434,6 @@
     <h6 class="demo-header">progress</h6>
     <label for="file">File progress:</label>
     <progress id="file" max="100" value="70">70%</progress>
-
-    <!-- select -->
-    <h6 class="demo-header">select</h6>
-    <label for="pet-select">Choose a pet:</label>
-    <select name="pets" id="pet-select">
-      <option value="">--Please choose an option--</option>
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
-      <option value="hamster">Hamster</option>
-      <option value="parrot">Parrot</option>
-      <option value="spider">Spider</option>
-      <option value="goldfish">Goldfish</option>
-    </select>
-
-    <!-- text area -->
-    <h6 class="demo-header">text area</h6>
-    <label for="story">Tell us your story:</label>
-
-    <textarea id="story" name="story" rows="5" cols="33">
-  It was a dark and stormy night...
-  </textarea
-    >
 
     <!-- interactive elements -->
 

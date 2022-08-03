@@ -16,11 +16,11 @@
 
 :root {
   --background-body: #fff;
-  --background-main: #ededf0;
+  --background-main: #f1f1f1;
   --primary: #e23123;
   --text: #1c1d1e;
   --links: #2aa2bb;
-  --border: #dbdbdb;
+  --border: #b8b8b8;
   --button-hover: #dddddd;
   --highlight-border-radius: 7px;
   --border-radius: 11px;
@@ -30,16 +30,24 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-body: #0f0f0f;
-    --background-main: #3a3a3a;
+    --background-main: #222;
     --links: #2aa2bb;
     --text: #efefef;
+    --border: #444;
     --shadow-color: #bebebe;
     --table-highlight: #545454;
   }
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
-  font-size: 11pt;
+  margin: 0;
+  font-size: 12pt;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: var(--text);
@@ -282,6 +290,24 @@ tbody tr:nth-child(even) {
 }
 
 /* Form elements */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+}
+
+button,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
 button {
   color: var(--text);
   background-color: var(--background-main);
@@ -301,18 +327,37 @@ button:active {
   box-shadow: none;
   border: 1px solid rgba(158, 158, 158, 0.6);
 }
-/* revist this... */
-button,
-select,
-input[type="submit"],
-input[type="button"],
-input[type="checkbox"],
-input[type="range"],
-input[type="radio"] {
-  cursor: pointer;
+
+label {
+  display: inline-block;
+}
+
+input {
+  background-color: var(--background-main);
+  border: 0.5px solid var(--border);
+  /* border: none; */
+  color: var(--text-main);
+  margin: 6px 0px;
+  padding: 11px;
+  border-radius: var(--border-radius);
+  max-width: fit-content;
+  outline: none;
+}
+
+textarea {
+  font-family: inherit;
+  background-color: var(--background-main);
+  border: 1px solid var(--border);
+  padding: 11px;
+  color: var(--text-main);
+  border-radius: var(--border-radius);
+  outline: none;
+  resize: none;
 }
 
 meter {
+  height: 3em;
+  vertical-align: middle;
 }
 
 fieldset {
