@@ -353,6 +353,7 @@ textarea {
   border-radius: var(--border-radius);
   outline: none;
   resize: none;
+  max-width: 100%;
 }
 
 meter {
