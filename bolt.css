@@ -346,6 +346,7 @@ input {
 
 textarea {
   font-family: inherit;
+  font-size: 1em;
   background-color: var(--background-main);
   border: 1px solid var(--border);
   padding: 11px;

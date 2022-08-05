@@ -1,1 +1,3 @@
-# boltcss
+# Boltcss
+
+Another classless css library.
