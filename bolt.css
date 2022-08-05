@@ -333,6 +333,7 @@ label {
 }
 
 input {
+  font-size: 1em;
   background-color: var(--background-main);
   border: 0.5px solid var(--border);
   /* border: none; */
