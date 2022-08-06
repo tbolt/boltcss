@@ -335,7 +335,7 @@ label {
 input {
   font-size: 1em;
   background-color: var(--background-main);
-  border: 0.5px solid var(--border);
+  border: 1px solid var(--border);
   /* border: none; */
   color: var(--text-main);
   margin: 6px 0px;
