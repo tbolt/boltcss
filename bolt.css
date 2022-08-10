@@ -22,10 +22,11 @@
   /* --links: #2aa2bb; */
   --links: #4589ee;
   --border: #b8b8b8;
-  --button-hover: #dddddd;
+  --hover-highlight: #dddddd;
   --highlight-border-radius: 7px;
   --border-radius: 11px;
   --shadow-color: #545454;
+  --select-icon-url: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23222222' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,8 +35,10 @@
     --background-main: #222;
     --text: #efefef;
     --border: #444;
+    --hover-highlight: #888;
     --shadow-color: #bebebe;
     --table-highlight: #545454;
+    --select-icon-url: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23ffffff' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
   }
 }
 
@@ -332,9 +335,11 @@ button:active {
 
 label {
   display: inline-block;
+  vertical-align: middle;
 }
 
-input {
+/* Todo: refactor this to target specific inputs and not :nots */
+input:not([type="checkbox"]):not([type="range"]) {
   font-size: 1em;
   background-color: var(--background-main);
   border: 1px solid var(--border);
@@ -351,6 +356,11 @@ input[type="range"] {
   vertical-align: middle;
 }
 
+input[type="checkbox"] {
+  height: 1em;
+  width: 1em;
+}
+
 textarea {
   font-family: inherit;
   font-size: 1em;
@@ -362,6 +372,30 @@ textarea {
   outline: none;
   resize: none;
   max-width: 100%;
+}
+
+select {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1rem;
+  color: var(--text);
+  padding: 0.6em 2em 0.5em 0.8em;
+  max-width: fit-content;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5em;
+  appearance: none;
+  background-color: var(--background-main);
+  background-image: var(--select-icon-url);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+/* Todo: Add this highlight border to all inputs */
+select:hover {
+  border-color: var(--hover-highlight);
 }
 
 meter {
