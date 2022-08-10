@@ -64,6 +64,7 @@ address {
 aside {
   width: 40%;
   padding: 0.84rem;
+  margin: 0.16rem;
   float: right;
   font-style: italic;
   color: var(--text);
@@ -343,6 +344,10 @@ input {
   border-radius: var(--border-radius);
   max-width: fit-content;
   outline: none;
+}
+
+input[type="range"] {
+  vertical-align: middle;
 }
 
 textarea {

@@ -362,6 +362,10 @@
         <input type="email" name="email" id="email" required />
       </div>
       <div class="form-example">
+        <label for="email">Favorite Number</label><br />
+        <input type="number" id="a" name="a" value="" />
+      </div>
+      <div class="form-example">
         <input type="submit" value="Subscribe!" />
       </div>
     </form>
@@ -389,57 +393,65 @@
       cols="66"
     ></textarea>
 
-    <!-- meter -->
-    <h6 class="demo-header">meter</h6>
-    <label for="fuel">Fuel level:</label>
-    <meter
-      id="fuel"
-      min="0"
-      max="100"
-      low="33"
-      high="66"
-      optimum="80"
-      value="50"
-    >
-      at 50/100
-    </meter>
-
-    <!-- optgroup -->
-    <h6 class="demo-header">optgroup</h6>
-    <label for="dino-select">Choose a dinosaur:</label>
-    <select id="dino-select">
-      <optgroup label="Theropods">
-        <option>Tyrannosaurus</option>
-        <option>Velociraptor</option>
-        <option>Deinonychus</option>
-      </optgroup>
-      <optgroup label="Sauropods">
-        <option>Diplodocus</option>
-        <option>Saltasaurus</option>
-        <option>Apatosaurus</option>
-      </optgroup>
-    </select>
-
-    <!-- output -->
-    <h6 class="demo-header">output</h6>
-    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-      <input type="range" id="b" name="b" value="50" /> +
-      <input type="number" id="a" name="a" value="10" /> =
-      <output name="result" for="a b">60</output>
-    </form>
-
-    <!-- progress -->
-    <h6 class="demo-header">progress</h6>
-    <label for="file">File progress:</label>
-    <progress id="file" max="100" value="70">70%</progress>
-
     <!-- interactive elements -->
-
     <!-- summary/details -->
     <h6 class="demo-header">summary/details</h6>
     <details>
       <summary>Details</summary>
       Something small enough to escape casual notice.
     </details>
+
+    <div class="misc-components">
+      <!-- meter -->
+      <div>
+        <h6 class="demo-header">meter</h6>
+        <label for="fuel">Fuel level:</label>
+        <meter
+          id="fuel"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="50"
+        >
+          at 50/100
+        </meter>
+      </div>
+
+      <!-- optgroup -->
+      <div>
+        <h6 class="demo-header">optgroup</h6>
+        <label for="dino-select">Choose a dinosaur:</label>
+        <select id="dino-select">
+          <optgroup label="Theropods">
+            <option>Tyrannosaurus</option>
+            <option>Velociraptor</option>
+            <option>Deinonychus</option>
+          </optgroup>
+          <optgroup label="Sauropods">
+            <option>Diplodocus</option>
+            <option>Saltasaurus</option>
+            <option>Apatosaurus</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- progress -->
+      <div>
+        <h6 class="demo-header">progress</h6>
+        <label for="file">File progress:</label>
+        <progress id="file" max="100" value="70">70%</progress>
+      </div>
+
+      <!-- output -->
+      <div>
+        <h6 class="demo-header">range/output</h6>
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" id="b" name="b" value="50" />
+          <output name="result" for="a b">60</output>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
