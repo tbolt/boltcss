@@ -19,7 +19,8 @@
   --background-main: #f1f1f1;
   --primary: #e23123;
   --text: #1c1d1e;
-  --links: #2aa2bb;
+  /* --links: #2aa2bb; */
+  --links: #4589ee;
   --border: #b8b8b8;
   --button-hover: #dddddd;
   --highlight-border-radius: 7px;
@@ -31,7 +32,6 @@
   :root {
     --background-body: #0f0f0f;
     --background-main: #222;
-    --links: #2aa2bb;
     --text: #efefef;
     --border: #444;
     --shadow-color: #bebebe;
@@ -81,28 +81,28 @@ header {
 }
 
 h1 {
-  font-size: 26pt;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 21pt;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 17pt;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 14pt;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 12pt;
+  font-size: 1.25rem;
   font-weight: normal;
 }
 
 h6 {
-  font-size: 10pt;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -112,8 +112,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h1,
@@ -201,7 +201,7 @@ time {
 }
 
 mark {
-  background-color: #e6e08e;
+  background-color: #fffab7;
   padding: 3px 5px;
 }
 
