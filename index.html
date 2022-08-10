@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Bolt.css</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Bolt.css is a classless css library">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bolt.css" />
     <link rel="stylesheet" href="demo-support.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,7 +61,7 @@
     <!-- Content sectioning -->
 
     <!-- address -->
-    <h6 class="demo-header">address</h6>
+    <h3 class="demo-header">address</h3>
     <address>
       <a href="mailto:jim@rock.com">jim@rock.com</a>
       <br />
@@ -69,8 +72,8 @@
     <!-- not provided -->
 
     <!-- aside -->
-    <h6 class="demo-header">aside</h6>
-    <aside>
+    <h3 class="demo-header">aside</h3>
+    <aside style="float: right">
       The Rough-skinned Newt defends itself with a deadly neurotoxin.
     </aside>
     <p>
@@ -91,7 +94,7 @@
     <!-- not provided -->
 
     <!-- headings h1-h6 -->
-    <h6 class="demo-header">headings</h6>
+    <h3 class="demo-header">headings</h3>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -111,7 +114,7 @@
     <!-- section - no styles for now -->
 
     <!-- Inline text elements  -->
-    <h6 class="demo-header">inline text elements</h6>
+    <h3 class="demo-header">inline text elements</h3>
     <p>
       When Dave asks <a href="https://wikipedia.org/HAL_9000">HAL</a> to open
       the pod bay door, HAL answers:
@@ -181,7 +184,7 @@
     >
 
     <!-- blockquote -->
-    <h6 class="demo-header">blockquote</h6>
+    <h3 class="demo-header">blockquote</h3>
     <blockquote cite="https://www.huxley.net/bnw/four.html">
       <p>
         Words can be like X-rays, if you use them properly—they’ll go through
@@ -191,7 +194,7 @@
     </blockquote>
 
     <!-- description list -->
-    <h6 class="demo-header">description list</h6>
+    <h3 class="demo-header">description list</h3>
     <dl>
       <dt>Beast of Bodmin</dt>
       <dd>A large feline inhabiting Bodmin Moor.</dd>
@@ -206,7 +209,7 @@
     <!-- figure with figcaption 
       removing this for now- will revisit when we can do something unique with it
     -->
-    <!-- <h6 class="demo-header">figure</h6>
+    <h3- <h6 class="demo-header">figure</h3>
     <figure>
       <img src="https://placebear.com/620/400" alt="Elephant at sunset" />
       <figcaption>An elephant at sunset</figcaption>
@@ -215,7 +218,7 @@
     <!-- hr used at top -->
 
     <!-- ol -->
-    <h6 class="demo-header">ol</h6>
+    <h3 class="demo-header">ol</h3>
     <ol>
       <li>Mix flour, baking powder, sugar, and salt.</li>
       <li>In another bowl, mix eggs, milk, and oil.</li>
@@ -225,7 +228,7 @@
     </ol>
 
     <!-- ul -->
-    <h6 class="demo-header">ul</h6>
+    <h3 class="demo-header">ul</h3>
     <ul>
       <li>Neil Armstrong</li>
       <li>Alan Bean</li>
@@ -238,7 +241,7 @@
     <!-- used in-line -->
 
     <!-- pre -->
-    <h6 class="demo-header">pre</h6>
+    <h3 class="demo-header">pre</h3>
     <pre role="img" aria-label="ASCII COW">
   ___________________________
  | I'm an expert in my field. |
@@ -257,18 +260,18 @@
     <!-- used in in-line -->
 
     <!-- img -->
-    <h6 class="demo-header">img</h6>
+    <h3 class="demo-header">img</h3>
     <img src="snow.jpg" alt="Photo of a snowy landscape" />
 
     <!-- audio -->
-    <h6 class="demo-header">audio</h6>
+    <h3 class="demo-header">audio</h3>
     <audio controls src="/media/examples/t-rex-roar.mp3">
       Your browser does not support the
       <code>audio</code> element.
     </audio>
 
     <!-- video -->
-    <h6 class="demo-header">video</h6>
+    <h3 class="demo-header">video</h3>
     <video controls width="250">
       <source src="/media/examples/flower.webm" type="video/webm" />
       <source src="/media/examples/flower.mp4" type="video/mp4" />
@@ -276,7 +279,7 @@
     </video>
 
     <!-- table -->
-    <h6 class="demo-header">table</h6>
+    <h3 class="demo-header">table</h3>
     <table>
       <thead>
         <tr>
@@ -312,12 +315,12 @@
     <!-- form elements -->
 
     <!-- buttons -->
-    <h6 class="demo-header">button</h6>
+    <h3 class="demo-header">button</h3>
     <button type="button">Save</button>
 
     <!-- revist... -->
     <!-- datalist -->
-    <h6 class="demo-header">datalist</h6>
+    <h3 class="demo-header">datalist</h3>
     <label for="ice-cream-choice">Choose a flavor</label>
     <br />
     <input
@@ -334,7 +337,7 @@
     </datalist>
 
     <!-- fieldset -->
-    <h6 class="demo-header">fieldset</h6>
+    <h3 class="demo-header">fieldset</h3>
     <form>
       <fieldset>
         <legend>Choose your favorite monster</legend>
@@ -351,7 +354,7 @@
     </form>
 
     <!-- form -->
-    <h6 class="demo-header">form</h6>
+    <h3 class="demo-header">form</h3>
     <form action="#" method="get" class="form-example">
       <div class="form-example">
         <label for="name">Full name</label><br />
@@ -375,7 +378,7 @@
     </form>
 
     <!-- select -->
-    <h6 class="demo-header">select</h6>
+    <h3 class="demo-header">select</h3>
     <label for="pet-select">Choose a pet:</label>
     <select name="pets" id="pet-select">
       <option value="">Select and option</option>
@@ -388,7 +391,7 @@
     </select>
 
     <!-- text area -->
-    <h6 class="demo-header">text area</h6>
+    <h3 class="demo-header">text area</h3>
     <textarea
       id="story"
       name="story"
@@ -399,7 +402,7 @@
 
     <!-- interactive elements -->
     <!-- summary/details -->
-    <h6 class="demo-header">summary/details</h6>
+    <h3 class="demo-header">summary/details</h3>
     <details>
       <summary>Details</summary>
       Something small enough to escape casual notice.
@@ -408,7 +411,7 @@
     <div class="misc-components">
       <!-- meter -->
       <div>
-        <h6 class="demo-header">meter</h6>
+        <h3 class="demo-header">meter</h3>
         <label for="fuel">Fuel level:</label>
         <meter
           id="fuel"
@@ -425,7 +428,7 @@
 
       <!-- optgroup -->
       <div>
-        <h6 class="demo-header">optgroup</h6>
+        <h3 class="demo-header">optgroup</h3>
         <label for="dino-select">Choose a dinosaur:</label>
         <select id="dino-select">
           <optgroup label="Theropods">
@@ -443,16 +446,22 @@
 
       <!-- progress -->
       <div>
-        <h6 class="demo-header">progress</h6>
+        <h3 class="demo-header">progress</h3>
         <label for="file">File progress:</label>
         <progress id="file" max="100" value="70">70%</progress>
       </div>
 
       <!-- output -->
       <div>
-        <h6 class="demo-header">range/output</h6>
-        <form oninput="result.value=parseInt(b.value)">
-          <input type="range" id="b" name="b" value="50" />
+        <h3 class="demo-header" id="rangedemo-label">range/output</h3>
+        <form oninput="result.value=parseInt(rangedemo.value)">
+          <input
+            type="range"
+            id="rangedemo"
+            name="rangedemo"
+            value="50"
+            aria-labelledby="rangedemo-label"
+          />
           <output name="result" for="b">60</output>
         </form>
       </div>

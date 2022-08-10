@@ -15,17 +15,17 @@
  */
 
 :root {
-  --background-body: #fff;
-  --background-main: #f1f1f1;
-  --primary: #e23123;
-  --text: #1c1d1e;
-  /* --links: #2aa2bb; */
   --links: #4589ee;
-  --border: #b8b8b8;
-  --hover-highlight: #dddddd;
   --highlight-border-radius: 7px;
   --border-radius: 11px;
+
+  --background-body: #fff;
+  --background-main: #f1f1f1;
+  --text: #1c1d1e;
+  --border: #b8b8b8;
+  --hover-highlight: #dddddd;
   --shadow-color: #545454;
+  --table-highlight: #f1f1f1;
   --select-icon-url: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23222222' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
 }
 
@@ -64,12 +64,11 @@ address {
   line-height: 1.6rem;
 }
 
-/* This sets a float right which makes it fixed */
+/* Todo: Revisit this and try to find a way to handle margin depending on float direction  */
 aside {
   width: 40%;
   padding: 0.84rem;
   margin: 0.16rem;
-  float: right;
   font-style: italic;
   color: var(--text);
   background-color: var(--background-main);
@@ -175,7 +174,7 @@ figure {
 }
 
 hr {
-  border: 2px solid gray;
+  border: 2px solid var(--border);
 }
 
 ul,
