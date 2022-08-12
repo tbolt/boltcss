@@ -333,12 +333,10 @@ button:active {
 }
 
 label {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
 }
 
-/* Todo: refactor this to target specific inputs and not :nots */
-input:not([type="checkbox"]):not([type="range"]) {
+input {
   font-size: 1em;
   background-color: var(--background-main);
   border: 1px solid var(--border);
