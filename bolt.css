@@ -432,3 +432,11 @@ details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
 }
+
+/* Hacky dialog */
+dialog {
+  background-color: var(--background-main);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--text);
+}
