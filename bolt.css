@@ -358,6 +358,11 @@ input[type="checkbox"] {
   width: 1em;
 }
 
+input[type='checkbox'],
+input[type='radio'] {
+  display: initial;
+}
+
 textarea {
   font-family: inherit;
   font-size: 1em;
