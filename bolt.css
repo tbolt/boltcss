@@ -266,33 +266,23 @@ table {
   width: fit-content;
   margin: 10px 0;
   border: 1px solid var(--border);
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
   border-radius: 11px;
 }
 
 table tr:last-child td:first-child {
-  -moz-border-radius-bottomleft: 7px;
-  -webkit-border-bottom-left-radius: 7px;
-  border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 8px;
 }
 
 table tr:last-child td:last-child {
-  -moz-border-radius-bottomright: 7px;
-  -webkit-border-bottom-right-radius: 7px;
-  border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 8px;
 }
 
 table tr:first-child th:first-child {
-  -moz-border-radius-topleft: 7px;
-  -webkit-border-top-left-radius: 7px;
-  border-top-left-radius: 7px;
+  border-top-left-radius: 8px;
 }
 
 table tr:first-child th:last-child {
-  -moz-border-radius-topright: 7px;
-  -webkit-border-top-right-radius: 7px;
-  border-top-right-radius: 7px;
+  border-top-right-radius: 8px;
 }
 
 th {
