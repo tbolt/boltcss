@@ -263,10 +263,40 @@ video {
 
 /* Table content */
 table {
-  width: 100%;
+  width: fit-content;
   margin: 10px 0;
   border: 1px solid var(--border);
-  border-collapse: collapse;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+}
+
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+table tr:first-child th:first-child {
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+table tr:first-child th:last-child {
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+th {
+  background-color: var(--background-main);
 }
 
 td,
@@ -276,7 +306,7 @@ th {
 }
 
 thead {
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
   border-collapse: collapse;
 }
 
@@ -287,10 +317,6 @@ tfoot {
 table tr:hover,
 tbody tr:nth-child(even):hover {
   background-color: var(--table-highlight);
-}
-
-tbody tr:nth-child(even) {
-  /* background-color: var(--background); */
 }
 
 /* Form elements */
@@ -320,16 +346,12 @@ button {
   padding: 6px 15px 6px 15px;
   border: 1px solid transparent;
   border-radius: 6px;
-  box-shadow: 0px 2px 2px rgba(158, 158, 158, 0.6);
-}
-
-button:hover {
-  box-shadow: 0px 3px 3px rgba(158, 158, 158, 0.6);
+  box-shadow: 0px 1px 1.5px rgb(158 158 158 / 60%);
 }
 
 button:active {
   box-shadow: none;
-  border: 1px solid rgba(158, 158, 158, 0.6);
+  border: 1px solid var(--border);
 }
 
 /* Use this when we want to replace the default browser styling for checkbox, etc... */
@@ -389,6 +411,7 @@ select {
   font-size: 1rem;
   color: var(--text);
   padding: 0.6em 2em 0.5em 0.8em;
+  margin: 6px 0px;
   max-width: fit-content;
   box-sizing: border-box;
   border: 1px solid var(--border);
