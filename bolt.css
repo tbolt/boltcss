@@ -264,8 +264,8 @@ video {
 /* Table content */
 table {
   width: fit-content;
-  margin: 10px 0;
-  border: 1px solid var(--border);
+  border: 1px solid var(--background-main);
+  background: var(--background-main);
   border-radius: 11px;
 }
 
@@ -289,6 +289,10 @@ th {
   background-color: var(--background-main);
 }
 
+td {
+  background: var(--background-body);
+}
+
 td,
 th {
   text-align: left;
@@ -304,9 +308,9 @@ tfoot {
   border-top: 1px solid black;
 }
 
-table tr:hover,
-tbody tr:nth-child(even):hover {
-  background-color: var(--table-highlight);
+table tr:hover td,
+tbody tr:nth-child(even):hover td {
+  background-color: var(--border);
 }
 
 /* Form elements */
@@ -373,7 +377,7 @@ input {
   background-color: var(--background-main);
   border: 1px solid var(--border);
   /* border: none; */
-  color: var(--text-main);
+  color: var(--text);
   margin: 6px 0px;
   padding: 11px;
   border-radius: var(--border-radius);
@@ -388,7 +392,7 @@ textarea {
   background-color: var(--background-main);
   border: 1px solid var(--border);
   padding: 11px;
-  color: var(--text-main);
+  color: var(--text);
   border-radius: var(--border-radius);
   outline: none;
   resize: none;
