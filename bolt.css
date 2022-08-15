@@ -332,8 +332,28 @@ button:active {
   border: 1px solid rgba(158, 158, 158, 0.6);
 }
 
+/* Use this when we want to replace the default browser styling for checkbox, etc... */
+/* textarea,
+select,
+input,
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} */
+
 label {
   display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+  position: relative;
+}
+
+input[type="range"] {
+  vertical-align: middle;
 }
 
 input {
@@ -347,20 +367,7 @@ input {
   border-radius: var(--border-radius);
   max-width: fit-content;
   outline: none;
-}
-
-input[type="range"] {
-  vertical-align: middle;
-}
-
-input[type="checkbox"] {
-  height: 1em;
-  width: 1em;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  display: initial;
+  display: inline-block;
 }
 
 textarea {
