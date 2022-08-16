@@ -259,6 +259,7 @@ img {
 }
 
 video {
+  border-radius: var(--border-radius);
 }
 
 /* Table content */
