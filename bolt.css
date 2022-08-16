@@ -260,6 +260,7 @@ img {
 
 video {
   border-radius: var(--border-radius);
+  max-width: 100%
 }
 
 /* Table content */
