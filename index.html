@@ -22,8 +22,6 @@
       classes. This is not a complete solution with layout grids, components,
       utility classes, and the like.
     </p>
-
-    <!-- Replace this with features / highlights -->
     <h2>Features</h2>
     <ul>
       <li>No layout support</li>
@@ -31,13 +29,12 @@
       <li>Tiny</li>
       <li>Dark and Light modes</li>
     </ul>
-
     <h2>How and why I made this</h2>
     <p>
       I used the fantastic
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-        >HTML Elements Reference</a
-      >
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+        HTML Elements Reference
+      </a>
       on MDN and modified it as needed.
     </p>
     <p>I created Bolt.css because I wanted to</p>
@@ -73,6 +70,7 @@
 
     <!-- aside -->
     <h3 class="demo-header">aside</h3>
+    <!-- Todo: figure out how to handle content padding dependent on float direction -->
     <aside style="float: right">
       The Rough-skinned Newt defends itself with a deadly neurotoxin.
     </aside>
@@ -111,27 +109,28 @@
     <!-- nav -->
     <!-- not provided -->
 
-    <!-- section - no styles for now -->
+    <!-- section -->
+    <!-- not provided yet -->
 
     <!-- Inline text elements  -->
     <h3 class="demo-header">inline text elements</h3>
     <p>
       When Dave asks <a href="https://wikipedia.org/HAL_9000">HAL</a> to open
       the pod bay door, HAL answers:
-      <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921"
-        >I'm sorry, Dave. I'm afraid I can't do that.</q
-      >
+      <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">
+        I'm sorry, Dave. I'm afraid I can't do that.
+      </q>
       You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your
       <abbr title="HyperText Markup Language">HTML</abbr>. The two most popular
       science courses offered by the school are
       <b class="term">chemistry</b> (the study of chemicals and the composition
       of substances) and <b class="term">physics</b> (the study of the nature
       and properties of matter and energy). First sentence in
-      <cite
-        ><a href="http://www.george-orwell.org/1984/0.html"
-          >Nineteen Eighty-Four</a
-        ></cite
-      >
+      <cite>
+        <a href="http://www.george-orwell.org/1984/0.html">
+          Nineteen Eighty-Four
+        </a>
+      </cite>
       by George Orwell (Part 1, Chapter 1).
     </p>
 
@@ -304,8 +303,8 @@
     <!-- buttons -->
     <h3 class="demo-header">button</h3>
     <button type="button">Save</button>
+    <button type="button" disabled>Disabled</button>
 
-    <!-- revist... -->
     <!-- datalist -->
     <h3 class="demo-header">datalist</h3>
     <label for="ice-cream-choice">Choose a flavor</label>
@@ -327,17 +326,14 @@
     <form>
       <fieldset>
         <legend>Choose your favorite monster</legend>
-
         <label for="kraken">
           <input type="radio" id="kraken" name="monster" />
           Kraken
         </label>
-
         <label for="sasquatch">
           <input type="radio" id="sasquatch" name="monster" />
           Sasquatch
         </label>
-
         <label for="mothman">
           <input type="radio" id="mothman" name="monster" />
           Mothman
@@ -347,17 +343,17 @@
 
     <!-- form -->
     <h3 class="demo-header">form</h3>
-    <form action="#" method="get" class="form-example">
+    <form action="#" method="get">
       <div class="form-example">
-        <label for="name">Full name</label>
+        <label for="name"> Full name </label>
         <input type="text" name="name" id="name" required />
       </div>
       <div class="form-example">
-        <label for="email">Email</label>
+        <label for="email"> Email </label>
         <input type="email" name="email" id="email" required />
       </div>
       <div class="form-example">
-        <label for="favnum">Favorite Number</label>
+        <label for="favnum"> Favorite Number </label>
         <input type="number" id="favnum" name="favnum" value="" />
       </div>
       <div class="form-example">
@@ -373,7 +369,7 @@
 
     <!-- select -->
     <h3 class="demo-header">select</h3>
-    <label for="pet-select">Choose a pet:</label>
+    <label for="pet-select">Choose a pet</label>
     <select name="pets" id="pet-select">
       <option value="dog">Dog</option>
       <option value="cat">Cat</option>
@@ -405,7 +401,7 @@
       <!-- meter -->
       <div>
         <h3 class="demo-header">meter</h3>
-        <label for="fuel">Fuel level:</label>
+        <label for="fuel">Fuel level</label>
         <meter
           id="fuel"
           min="0"
@@ -422,7 +418,7 @@
       <!-- optgroup -->
       <div>
         <h3 class="demo-header">optgroup</h3>
-        <label for="dino-select">Choose a dinosaur:</label>
+        <label for="dino-select">Choose a dinosaur</label>
         <select id="dino-select">
           <optgroup label="Theropods">
             <option>Tyrannosaurus</option>
@@ -440,7 +436,7 @@
       <!-- progress -->
       <div>
         <h3 class="demo-header">progress</h3>
-        <label for="file">File progress:</label>
+        <label for="file">File progress</label>
         <progress id="file" max="100" value="70">70%</progress>
       </div>
 
@@ -459,5 +455,15 @@
         </form>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="demo-footer">
+      <hr />
+      <small>
+        <a href="https://archive.org/details/SavantTrigger_Zelda_Prelude">
+          Audio Attribution
+        </a>
+      </small>
+    </footer>
   </body>
 </html>

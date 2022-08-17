@@ -11,12 +11,20 @@
   font-size: 1rem;
 }
 
+.demo-footer {
+  padding-top: 5rem;
+}
+
 .demo-break {
   margin-top: 6rem;
 }
 
 .demo-code {
   display: block;
+}
+
+.form-example {
+  margin-bottom: 0.66em;
 }
 
 .misc-components {
@@ -27,4 +35,8 @@
 #fuel {
   max-width: 600px;
   min-width: 200px;
+}
+
+audio {
+  width: 100%;
 }

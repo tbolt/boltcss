@@ -1,6 +1,6 @@
 /**
  * Bolt.css
- * Version 0.1
+ * Version 0.2
  * https://github.com/tbolt/boltcss
  *
  * Sections
@@ -139,27 +139,25 @@ main {
 nav {
 }
 
-/* No styles */
+/* Not provided */
 section {
 }
 
 /* Text content */
 blockquote {
-  margin: 0 0 0 10px;
   position: relative;
-  padding: 0 1em;
+  padding-left: 1.5rem;
+  margin: 0;
 }
-blockquote:after {
+
+blockquote:before {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  right: 100%;
+  left: 0;
   height: 100%;
   border-left: 7px solid var(--border);
   border-radius: 6px;
-  transform: rotate(180deg);
-  margin: 5px 2px 2px 0px;
 }
 
 dd {
@@ -260,25 +258,25 @@ sub {
 
 /* Image and multimedia */
 audio {
-}
-
-img {
   max-width: 100%;
-  height: auto;
-  border-radius: var(--border-radius);
 }
 
+img,
 video {
   border-radius: var(--border-radius);
   max-width: 100%;
 }
 
-/* Table content */
+img {
+  height: auto;
+}
+
+/* Tables */
 table {
   width: fit-content;
   border: 1px solid var(--background-main);
   background: var(--background-main);
-  border-radius: 11px;
+  border-radius: var(--border-radius);
 }
 
 table tr:last-child td:first-child {
@@ -312,7 +310,6 @@ th {
 }
 
 thead {
-  /* border-bottom: 1px solid var(--border); */
   border-collapse: collapse;
 }
 
@@ -360,35 +357,23 @@ button:active {
   border: 1px solid var(--border);
 }
 
-/* Use this when we want to replace the default browser styling for checkbox, etc... */
-/* textarea,
-select,
-input,
-progress {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-} */
+button:disabled,
+button[disabled] {
+  box-shadow: none;
+  border: 1px solid var(--border);
+  cursor: initial;
+  opacity: 0.55;
+}
 
 label {
   display: block;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  vertical-align: middle;
-  position: relative;
-}
-
-input[type="range"] {
-  vertical-align: middle;
+  max-width: fit-content;
 }
 
 input {
   font-size: 1em;
   background-color: var(--background-main);
   border: 1px solid var(--border);
-  /* border: none; */
   color: var(--text);
   margin: 6px 0px;
   padding: 11px;
@@ -396,6 +381,42 @@ input {
   max-width: fit-content;
   outline: none;
   display: inline-block;
+  appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+  position: relative;
+  margin-right: 0.33em;
+  margin-top: 0.33em;
+}
+
+input[type="checkbox"] {
+  border-radius: 7px;
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  border: 1px solid var(--links);
+  background: var(--links);
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.5' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+input[type="radio"]:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+input[type="range"] {
+  vertical-align: middle;
+  appearance: auto;
 }
 
 textarea {
