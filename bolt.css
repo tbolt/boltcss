@@ -257,10 +257,7 @@ sub {
 }
 
 /* Image and multimedia */
-audio {
-  max-width: 100%;
-}
-
+audio,
 img,
 video {
   border-radius: var(--border-radius);
