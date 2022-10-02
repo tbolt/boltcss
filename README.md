@@ -28,3 +28,7 @@ Grab the [bolt.css](https://github.com/tbolt/boltcss/blob/master/bolt.css) style
 Alternatively, drop this right into your `<head>` to use it via CDN
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tbolt/boltcss/bolt.css">`
+
+## Contributing
+
+Feel free to provide feedback or report problems by [opening an issue](https://github.com/tbolt/boltcss/issues/new)

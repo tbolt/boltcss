@@ -21,6 +21,8 @@
 
 .demo-code {
   display: block;
+  margin-top: 1em;
+  white-space: nowrap;
 }
 
 .form-example {
