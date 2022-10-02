@@ -25,7 +25,7 @@ I created Bolt.css because I wanted to
 
 Grab the [bolt.css](https://github.com/tbolt/boltcss/blob/master/bolt.css) stylesheet and add it manually to your app.
 
-Alternatively, drop this right into your `<head>` to use it via CDN
+Alternatively, drop this right into your `<head>` to use it via a CDN
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tbolt/boltcss/bolt.css">`
 
