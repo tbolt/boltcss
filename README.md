@@ -31,4 +31,4 @@ Alternatively, drop this right into your `<head>` to use it via a CDN
 
 ## Contributing
 
-Feel free to provide feedback or report problems by [opening an issue](https://github.com/tbolt/boltcss/issues/new)
+Feel free to provide feedback or report problems by [opening an issue](https://github.com/tbolt/boltcss/issues/new).
