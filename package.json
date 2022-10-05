@@ -1,0 +1,22 @@
+{
+  "name": "boltcss",
+  "version": "0.2.0",
+  "description": "Boltcss classless CSS stylesheet",
+  "main": "bolt.css",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbolt/boltcss.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "boltcss"
+  ],
+  "author": "tbolt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbolt/boltcss/issues"
+  },
+  "homepage": "https://github.com/tbolt/boltcss#readme"
+}
