@@ -11,6 +11,12 @@
   font-size: 1rem;
 }
 
+.demo-topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .demo-footer {
   padding-top: 5rem;
 }
