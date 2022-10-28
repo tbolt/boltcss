@@ -21,13 +21,28 @@ I created Bolt.css because I wanted to
 2.  Have an exercise to learn more of the lesser-known tags/elements
 3.  Use it in other projects
 
-## How to use
+## Installation
 
-Grab the [bolt.css](https://github.com/tbolt/boltcss/blob/master/bolt.css) stylesheet and add it manually to your app.
+### Via CDN
 
-Alternatively, drop this right into your `<head>` to use it via a CDN
+Drop this right into your `<head>` to use it via a CDN
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tbolt/boltcss/bolt.css">`
+`<link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.css">`
+
+You will automatically receive updates/refinements as they are added. If you want to lock to a specific version you can do so by adding a version to the href like so:
+`<link rel="stylesheet" href="https://unpkg.com/boltcss@0.4.0/bolt.css">`
+
+### Via NPM
+
+`npm i boltcss`
+
+or
+
+`yarn add boltcss`
+
+### Manually
+
+You can self-host or copy + paste the stylesheet into your project by grabbing [bolt.css](https://github.com/tbolt/boltcss/blob/master/bolt.css) directly.
 
 ## Contributing
 
