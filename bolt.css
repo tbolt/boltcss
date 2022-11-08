@@ -206,6 +206,12 @@ a {
   color: var(--links);
 }
 
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
 mark,
 samp,
 kbd,
