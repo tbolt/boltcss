@@ -27,13 +27,13 @@ I created Bolt.css because I wanted to
 
 Drop this right into your `<head>` to use it via a CDN
 
-`<link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.css">`
+`<link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css">`
 
-You will automatically receive updates/refinements as they are added. 
+You will automatically receive updates/refinements as they are added.
 
 If you want to lock to a specific version you can do so by adding a version to the href like so:
 
-`<link rel="stylesheet" href="https://unpkg.com/boltcss@0.4.0/bolt.css">`
+`<link rel="stylesheet" href="https://unpkg.com/boltcss@0.4.0/bolt.min.css">`
 
 ### Via NPM
 
