@@ -246,8 +246,7 @@ code,
 pre {
   font-size: 1em;
   padding: 2px 4px;
-  background-color: whitesmoke;
-  color: black;
+  background: var(--background-main);
   border: 1px solid darkgray;
   max-width: fit-content;
   overflow-x: auto;
