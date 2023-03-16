@@ -19,5 +19,6 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Minify source code
+          push_options: "--force"
           branch: ${{ github.ref }}
           token: ${{ secrets.boltcss-bot }}
