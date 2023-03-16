@@ -8,8 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
+          token: ${{ secrets.pat }}
           ref: ${{ github.ref }}
 
       - name: Minify Action
@@ -20,4 +21,3 @@ jobs:
         with:
           commit_message: Minify source code
           branch: ${{ github.ref }}
-          token: ${{ secrets.PAT }}
