@@ -20,5 +20,4 @@ jobs:
         with:
           commit_message: Minify source code
           branch: ${{ github.ref }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.boltcss-bot }}
