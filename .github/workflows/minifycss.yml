@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.BOLT_BOT }}
 
       - name: Auto Minify
         uses: nizarmah/auto-minify@v2.1
