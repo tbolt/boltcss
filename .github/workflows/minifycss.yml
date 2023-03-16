@@ -1,20 +1,22 @@
 name: Minify CSS
 on:
-  push
-  
+  push:
+    branches: main
+
 jobs:
-  minify:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Auto Minify
-      uses: nizarmah/auto-minify@v2.1
-    
-    # Auto commits minified files to the repository
-    # Ignore it if you don't want to commit the files to the repository 
-    - name: Auto committing minified files
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "Github Action: Auto Minified JS and CSS files"
-        branch: ${{ github.ref }}
+      # Checks-out your repository
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Minify Action
+        uses: anthonyftwang/minify-action@v1.0.1
+
+      # Auto-commit to repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Minify source code
+          branch: ${{ github.ref }}
