@@ -21,4 +21,4 @@ jobs:
           commit_message: Minify source code
           push_options: "--force"
           branch: ${{ github.ref }}
-          token: ${{ secrets.boltcss-bot }}
+          token: ${{ secrets.PAT }}
