@@ -27,7 +27,7 @@ I created Bolt.css because I wanted to
 
 Drop this right into your `<head>` to use it via a CDN
 
-`<link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css">`
+`<link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css" integrity="sha384-PSzHklU0wT897cBMg+9qlTsh9O0FtnWnfHus5/jGskSj518OHHoQug4Z2cAKCfcV">`
 
 You will automatically receive updates/refinements as they are added.
 
