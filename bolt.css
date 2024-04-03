@@ -430,6 +430,16 @@ input[type="range"] {
   padding: 0;
 }
 
+input[type="color"] {
+  appearance: none;
+  inline-size: 44px;
+  outline-style: none;
+  padding: initial;
+  max-width: initial;
+  height: 2rem;
+  border-radius: 3px;
+}
+
 textarea {
   font-family: inherit;
   font-size: 1em;
