@@ -1,6 +1,6 @@
 /**
  * Bolt.css
- * Version 0.6.0
+ * Version 0.7.0
  * https://github.com/tbolt/boltcss
  *
  * Sections
@@ -428,6 +428,16 @@ input[type="radio"]:checked {
 input[type="range"] {
   vertical-align: middle;
   padding: 0;
+}
+
+input[type="color"] {
+  appearance: none;
+  inline-size: 44px;
+  outline-style: none;
+  padding: initial;
+  max-width: initial;
+  height: 2rem;
+  border-radius: 3px;
 }
 
 textarea {
