@@ -354,7 +354,7 @@ input[type="radio"] {
 
 button {
   color: var(--text);
-  background-color: var(--background-main);
+  background-color: var(--links);
   font-family: inherit;
   font-size: inherit;
   padding: 6px 15px 6px 15px;
