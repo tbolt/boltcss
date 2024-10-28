@@ -3,14 +3,18 @@ on:
   push:
     branches:
       - main
+
 jobs:
   minify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-      - run: npm install -g cssnano
+      - name: check out the repository
+        uses: actions/checkout@v4
 
-      - run: npx cssnano bolt.css -o bolt.min.css
+      - name: auto minify the files
+        uses: nizarmah/auto-minify@v3
+
+      - name: auto commit the minified files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "bot: Add auto minified files"
