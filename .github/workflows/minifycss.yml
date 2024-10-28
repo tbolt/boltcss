@@ -13,4 +13,4 @@ jobs:
           node-version: "20"
       - run: npm install -g cssnano
 
-      - run: cssnano bolt.css -o bolt.min.css
+      - run: npx cssnano bolt.css -o bolt.min.css
