@@ -421,6 +421,19 @@
       </div>
     </div>
 
+    <!-- dialog -->
+     <div>
+      <h3 class="demo-header">dialog</h3>
+      <button type="button" onclick="document.getElementById('dialog').showModal()">Open as modal</button>
+      <button type="button" onclick="document.getElementById('dialog').open = true">Open as dialog</button>
+      <dialog id="dialog">
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+    </div>
+
     <!-- Footer -->
     <footer class="demo-footer">
       <hr />
