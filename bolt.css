@@ -500,22 +500,47 @@ progress {
   appearance: none;
   height: 1rem;
   margin: 0.75rem 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: var(--border-radius);
+  background-color: var(--background-main);
 }
 
 progress::-webkit-progress-bar {
-  background: var(--background-main);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
-  border-radius: var(--highlight-border-radius);
+  border-radius: var(--border-radius);
+  background: none;
 }
-
-progress::-webkit-progress-value {
+progress[value]::-webkit-progress-value {
   background-color: var(--links);
   border-radius: var(--highlight-border-radius);
+  -webkit-transition: inline-size 0.2s ease-in-out;
+  transition: inline-size 0.2s ease-in-out;
 }
 
 progress::-moz-progress-bar {
   background-color: var(--links);
   border-radius: var(--highlight-border-radius);
+}
+
+progress:indeterminate {
+  background: var(--background-main) linear-gradient(to right, var(--links) 35%, var(--background-main) 35%) top left/150% 150% no-repeat;
+  animation: progress-indeterminate 1s linear infinite;
+}
+progress:indeterminate[value]::-webkit-progress-value {
+  background-color: transparent;
+}
+progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+}
+
+@keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 fieldset {
