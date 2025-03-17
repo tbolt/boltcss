@@ -48,3 +48,7 @@
 audio {
   width: 100%;
 }
+
+.demo-select {
+  width: 200px;
+}

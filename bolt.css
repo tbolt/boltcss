@@ -477,6 +477,27 @@ select:is([multiple]) {
   height: fit-content;
 }
 
+select, ::picker(select) {
+  appearance: base-select;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  max-width: none;
+
+  option::checkmark {
+    display: none;
+  }
+  option {
+    padding: 0.5rem;
+  }
+
+  option:checked {
+    background-color: var(--background-main);
+  }
+}
+select::picker-icon {
+  display: none;
+}
+
 fieldset:focus-within,
 input:focus-within,
 textarea:focus-within,
