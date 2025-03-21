@@ -367,7 +367,9 @@ button:active {
 }
 
 button:disabled,
-button[disabled] {
+button[disabled],
+input[type="button"][disabled],
+input[type="submit"][disabled] {
   box-shadow: none;
   border: 1px solid var(--border);
   cursor: initial;
