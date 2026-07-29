@@ -435,7 +435,22 @@ input[type="color"] {
   padding: initial;
   max-width: initial;
   height: 2rem;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: var(--border-radius);
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: var(--border-radius);
+  border-style: none;
+  border: none;
 }
 
 textarea {
